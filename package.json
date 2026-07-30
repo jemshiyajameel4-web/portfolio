@@ -18,5 +18,8 @@
     "react"
   ],
   "author": "Jemshiya Jameel",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
