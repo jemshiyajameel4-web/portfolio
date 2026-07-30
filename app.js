@@ -362,6 +362,7 @@ Summary: Skilled in building responsive web UIs, high-speed REST APIs (Django & 
     Gentrius Solutions`,
 
     contact: `DIRECT CHANNELS:
+  Portfolio: jemshiya.vercel.app
   Email    : jemshiyajameel4@gmail.com
   Phone    : +91 8075507112
   LinkedIn : www.linkedin.com/in/jemshiya-jameel4
