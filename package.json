@@ -1,0 +1,22 @@
+{
+  "name": "jemshiya-jameel-portfolio",
+  "version": "1.0.0",
+  "description": "Futuristic Cyber Portfolio for Jemshiya Jameel - Python Full Stack Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000",
+    "start": "npx serve -l 3000",
+    "serve": "python -m http.server 8085"
+  },
+  "keywords": [
+    "portfolio",
+    "cyberpunk",
+    "fullstack",
+    "python",
+    "django",
+    "fastapi",
+    "react"
+  ],
+  "author": "Jemshiya Jameel",
+  "license": "MIT"
+}
