@@ -191,45 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCanvas();
   }
 
-  // 5. DYNAMIC TYPEWRITER SUBTITLE
-  const typewriterElem = document.getElementById('typewriter');
-  if (typewriterElem) {
-    const roles = [
-      'PYTHON FULL STACK DEVELOPER',
-      'AI & SENTIMENT ANALYSIS ENGINEER',
-      'FASTAPI & DJANGO BACKEND ARCHITECT',
-      'REACT.JS & NEXT.JS FRONTEND DEVELOPER'
-    ];
-    let roleIdx = 0;
-    let charIdx = 0;
-    let isDeleting = false;
 
-    function typeEffect() {
-      const currentRole = roles[roleIdx];
-
-      if (isDeleting) {
-        typewriterElem.textContent = currentRole.substring(0, charIdx - 1);
-        charIdx--;
-      } else {
-        typewriterElem.textContent = currentRole.substring(0, charIdx + 1);
-        charIdx++;
-      }
-
-      let typeSpeed = isDeleting ? 40 : 80;
-
-      if (!isDeleting && charIdx === currentRole.length) {
-        typeSpeed = 2200; // Pause at end
-        isDeleting = true;
-      } else if (isDeleting && charIdx === 0) {
-        isDeleting = false;
-        roleIdx = (roleIdx + 1) % roles.length;
-        typeSpeed = 400;
-      }
-
-      setTimeout(typeEffect, typeSpeed);
-    }
-    typeEffect();
-  }
 
   // 6. SKILLS MATRIX FILTERING
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -347,7 +309,7 @@ Summary: Skilled in building responsive web UIs, high-speed REST APIs (Django & 
   
   2. LegalTech Platform – Law Firm & Case Management
      Tech: Python, FastAPI, Next.js, SQLAlchemy, MySQL, Tailwind
-     Desc: 40% efficiency gain, GST/Court Fee finance engine, role-based dashboards.`,
+     Desc: High efficiency gain, GST/Court Fee finance engine, role-based dashboards.`,
 
     exp: `WORK LOG:
   Role: Junior Python Full Stack Developer

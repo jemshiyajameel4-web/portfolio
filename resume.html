@@ -14,7 +14,7 @@
       --accent: #2563eb;
       --text: #334155;
       --text-dark: #0f172a;
-      --border: #e2e8f0;
+      --border: #cbd5e1;
       --bg: #ffffff;
     }
 
@@ -29,17 +29,17 @@
       color: var(--text);
       background-color: #f8fafc;
       line-height: 1.5;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
 
     .resume-container {
       max-width: 850px;
       margin: 0 auto;
       background: var(--bg);
-      padding: 50px;
+      padding: 45px 50px;
       border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e2e8f0;
     }
 
     /* Action bar for printing */
@@ -74,20 +74,20 @@
     .header {
       text-align: center;
       border-bottom: 2px solid var(--primary);
-      padding-bottom: 20px;
-      margin-bottom: 25px;
+      padding-bottom: 16px;
+      margin-bottom: 22px;
     }
 
     .header h1 {
       font-size: 32px;
       font-weight: 800;
       color: var(--text-dark);
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       text-transform: uppercase;
     }
 
     .header h2 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
       color: var(--accent);
       margin-top: 4px;
@@ -98,8 +98,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      font-size: 13.5px;
+      gap: 14px;
+      font-size: 13px;
       color: #475569;
     }
 
@@ -116,18 +116,18 @@
     }
 
     .section {
-      margin-bottom: 25px;
+      margin-bottom: 22px;
     }
 
     .section-title {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       color: var(--text-dark);
       text-transform: uppercase;
       letter-spacing: 0.8px;
       border-bottom: 1.5px solid var(--border);
-      padding-bottom: 5px;
-      margin-bottom: 12px;
+      padding-bottom: 4px;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -138,26 +138,27 @@
     }
 
     p.summary {
-      font-size: 14px;
+      font-size: 13.5px;
       color: #334155;
       text-align: justify;
+      line-height: 1.6;
     }
 
     .job-title-row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
 
     .job-title {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       color: var(--text-dark);
     }
 
     .job-company {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 600;
       color: var(--accent);
       margin-bottom: 6px;
@@ -165,7 +166,7 @@
 
     .job-date {
       font-size: 13px;
-      font-weight: 500;
+      font-weight: 600;
       color: #64748b;
     }
 
@@ -176,18 +177,20 @@
     }
 
     ul.bullets li {
-      margin-bottom: 6px;
-
+      margin-bottom: 5px;
+      line-height: 1.55;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px 30px;
+    .skills-list {
       font-size: 13.5px;
+      line-height: 1.7;
     }
 
-    .skill-item strong {
+    .skills-list div {
+      margin-bottom: 4px;
+    }
+
+    .skills-list strong {
       color: var(--text-dark);
     }
 
@@ -250,10 +253,10 @@
       <h2>Python Full Stack Developer</h2>
       <div class="contact-info">
         <span><i class="fa-solid fa-phone"></i> +91 8075507112</span>
-        <a href="mailto:jemshiyajameel4@gmail.com"><i class="fa-solid fa-envelope"></i> jemshiyajameel4@gmail.com</a>
-        <a href="https://jemshiya.vercel.app/" target="_blank"><i class="fa-solid fa-globe"></i> jemshiya.vercel.app</a>
-        <a href="https://www.linkedin.com/in/jemshiya-jameel4" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/jemshiya-jameel4</a>
-        <a href="https://github.com/jemshiya-jameel4" target="_blank"><i class="fa-brands fa-github"></i> github.com/jemshiya-jameel4</a>
+        <a href="mailto:jemshiyajameel4@gmail.com"><i class="fa-solid fa-envelope"></i> Gmail</a>
+        <a href="https://www.linkedin.com/in/jemshiya-jameel4" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/jemshiya-jameel4" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://jemshiya.vercel.app/" target="_blank"><i class="fa-solid fa-globe"></i> Portfolio</a>
         <span><i class="fa-solid fa-location-dot"></i> Kerala, India</span>
       </div>
     </header>
@@ -262,7 +265,7 @@
     <section class="section">
       <h3 class="section-title"><i class="fa-solid fa-user"></i> Professional Summary</h3>
       <p class="summary">
-        Python Full Stack Developer with hands-on experience in building web applications using Python, Django, React.js, JavaScript, and MySQL. Skilled in developing responsive user interfaces, REST APIs, database management, and full-stack application development. Experienced in building AI-powered web applications, integrating NLP-based sentiment analysis, and developing interactive dashboards. Familiar with Git, GitHub, FastAPI, and modern software development practices through real-world internship experience. Strong problem-solving abilities, a collaborative mindset, and a passion for learning new technologies and building scalable software solutions.
+        Python Full Stack Developer with hands-on experience in building web applications using Python, Django, React.js, JavaScript, and MySQL. Skilled in developing responsive user interfaces, REST APIs, database management, and full-stack application development. Experienced in building AI-powered web applications, integrating NLP-based sentiment analysis, and developing interactive dashboards. Familiar with Git, GitHub, FastAPI, Docker, and modern software development practices through real-world internship experience. Strong problem-solving abilities, a collaborative mindset, and a passion for learning new technologies and building scalable software solutions.
       </p>
     </section>
 
@@ -270,28 +273,27 @@
     <section class="section">
       <h3 class="section-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
       <div class="job-title-row">
-        <span class="job-title">Junior Python Full Stack Developer</span>
+        <span class="job-title">• Junior Python Full Stack Developer</span>
         <span class="job-date">May 2026 – Present</span>
       </div>
       <div class="job-company">MarketBytes, Infopark Cherthala</div>
       <ul class="bullets">
         <li>Working on full stack web application development using Python, Django, React.js, FastAPI, Next.js and JavaScript.</li>
-        <li>Developing responsive frontend interfaces and backend APIs for web applications.</li>
-        <li>Collaborating with team members using Git and GitHub for version control and project management.</li>
-        <li>Gaining hands-on experience in REST API integration, database management, and debugging.</li>
+        <li>Developing responsive frontend interfaces, REST APIs, database management systems, and debugging code.</li>
+        <li>Collaborating with team members using Git and GitHub for version control and agile project management.</li>
       </ul>
     </section>
 
     <!-- TECHNICAL SKILLS -->
     <section class="section">
       <h3 class="section-title"><i class="fa-solid fa-code"></i> Technical Skills</h3>
-      <div class="skills-grid">
-        <div class="skill-item"><strong>Programming Languages:</strong> Python</div>
-        <div class="skill-item"><strong>Frontend Technologies:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Bootstrap, Next.js, Tailwind CSS</div>
-        <div class="skill-item"><strong>Backend Frameworks:</strong> Django, REST APIs, FastAPI, SQLAlchemy</div>
-        <div class="skill-item"><strong>Databases:</strong> MySQL</div>
-        <div class="skill-item"><strong>Developer Tools:</strong> Git, GitHub, Version Control, GitHub Copilot, Linux</div>
-        <div class="skill-item"><strong>Core Computer Science:</strong> Data Structures, Algorithms, OOP, Problem Solving</div>
+      <div class="skills-list">
+        <div><strong>• Programming Languages:</strong> Python</div>
+        <div><strong>• Frontend Technologies:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Bootstrap, Next.js, Tailwind CSS</div>
+        <div><strong>• Backend Frameworks:</strong> Django, FastAPI, REST APIs, WebSockets</div>
+        <div><strong>• Databases:</strong> MySQL, SQLAlchemy</div>
+        <div><strong>• Developer Tools:</strong> Git, GitHub, Docker, Version Control, GitHub Copilot, Linux</div>
+        <div><strong>• Core Computer Science:</strong> Data Structures, Algorithms, OOP, Problem Solving</div>
       </div>
     </section>
 
@@ -306,9 +308,8 @@
         </div>
         <div class="project-tech">Technologies: Python, Django, HTML, CSS, Bootstrap, JavaScript, MySQL, NLP, Chart.js</div>
         <ul class="bullets">
-          <li>Built an AI-powered mental health platform using sentiment analysis to detect emotions and connect users with doctors. Developed an Admin Dashboard for managing users, doctors, content, and sentiment analytics.</li>
-          <li>Implemented doctor features including patient management, sentiment reports, consultations, and real-time chat.</li>
-          <li>Integrated AI-based sentiment monitoring with personalized wellness recommendations.</li>
+          <li>Built an AI-powered mental health platform using NLP sentiment analysis for emotion detection and doctor consultation.</li>
+          <li>Developed role-based dashboards for doctor-patient management, sentiment analytics, and real-time chat.</li>
         </ul>
       </div>
 
@@ -316,12 +317,12 @@
         <div class="project-header">
           <span class="project-title">LegalTech Platform – Law Firm & Case Management System</span>
         </div>
-        <div class="project-tech">Technologies: Python, FastAPI, Next.js, MySQL, SQLAlchemy, HTML, CSS, JavaScript, Tailwind CSS</div>
+        <div class="project-tech">Technologies: Python, FastAPI, Next.js, MySQL, SQLAlchemy, Docker, WebSockets, OCR, APScheduler</div>
         <ul class="bullets">
-          <li>Engineered a full-stack legal management platform for law firms, advocates, and clients, improving operational workflow efficiency by 40%.</li>
-          <li>Built finance modules for invoice generation, GST calculation, court fee tracking, and payment workflows, ensuring 100% financial accuracy.</li>
-          <li>Developed role-based dashboards for Senior Advocates, Junior Advocates, and Clients with secure authentication and permission management, reducing administrative tasks by 35%.</li>
-          <li>Designed responsive frontend modules with case tracking, calendar scheduling, and document management, cutting onboarding and scheduling time by 50%.</li>
+          <li>Engineered live Indian e-Courts API integration with 16-character CNR tracking, automatically syncing hearing dates, court venues, and scheduled notification alerts via APScheduler.</li>
+          <li>Developed an Intelligent OCR & Document Generation engine (PyPDF2/EasyOCR) to digitize scanned physical court files and auto-populate petition templates and legal notices.</li>
+          <li>Integrated FastAPI WebSockets for real-time case-centric messaging with voice note audio recording and nested task delegation workflows for junior advocates and clerks.</li>
+          <li>Architected a dynamic 5-role RBAC system and Confidential Document Vault with real-time audit logging, alongside financial billing (18% GST) and Dockerized deployment.</li>
         </ul>
       </div>
     </section>
@@ -330,7 +331,7 @@
     <section class="section">
       <h3 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
       <div class="job-title-row">
-        <span class="job-title">Bachelor Of Computer Application (BCA)</span>
+        <span class="job-title">• Bachelor Of Computer Application</span>
         <span class="job-date">2023 - 2026</span>
       </div>
       <div style="font-size: 13.5px; color: #475569;">Swamy Saswathikananda College</div>

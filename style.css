@@ -423,9 +423,29 @@ body:hover .cyber-cursor-follower {
   box-shadow: 0 0 8px var(--neon-green);
 }
 
+.hero-kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--neon-cyan);
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.hero-kicker .kicker-tag {
+  color: var(--neon-purple);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
 .hero-title {
   font-family: var(--font-display);
-  font-size: 54px;
+  font-size: 46px;
   font-weight: 900;
   letter-spacing: 2px;
   color: var(--text-bright);
@@ -877,9 +897,8 @@ body:hover .cyber-cursor-follower {
 
 /* CONTACT HUB */
 .contact-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 30px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .contact-info {
