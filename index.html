@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jemshiya Jameel // Python Full Stack Developer Portfolio</title>
-  <meta name="description" content="Cyber-Futuristic Portfolio of Jemshiya Jameel - Python Full Stack Developer specializing in Django, FastAPI, React.js, Next.js, and AI-powered Web Applications.">
-  <meta name="keywords" content="Jemshiya Jameel, Python Full Stack Developer, Django, FastAPI, React, Next.js, Portfolio, LegalTech, Sentiment Analysis AI">
+  <meta name="description"
+    content="Cyber-Futuristic Portfolio of Jemshiya Jameel - Python Full Stack Developer specializing in Django, FastAPI, React.js, Next.js, and AI-powered Web Applications.">
+  <meta name="keywords"
+    content="Jemshiya Jameel, Python Full Stack Developer, Django, FastAPI, React, Next.js, Portfolio, LegalTech, Sentiment Analysis AI">
   <meta name="author" content="Jemshiya Jameel">
 
   <!-- Google Fonts: Orbitron, Fira Code, Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet">
 
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,11 +24,17 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="cyber-theme">
 
   <!-- Ambient Particles Background Canvas -->
   <canvas id="cyber-canvas"></canvas>
   <div class="scanlines-overlay" id="scanlines"></div>
+
+  <!-- Ambient Aurora Glow Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
 
   <!-- Custom Cyber Cursor -->
   <div class="cyber-cursor" id="cyber-cursor"></div>
@@ -53,8 +64,8 @@
         <button id="scanlines-toggle" class="hud-btn btn-icon" title="Toggle Scanlines FX" data-sfx="click">
           <i class="fa-solid fa-tv"></i>
         </button>
-        <button id="terminal-trigger" class="hud-btn btn-neon" data-sfx="click">
-          <i class="fa-solid fa-terminal"></i> CLI HUD
+        <button id="terminal-trigger" class="hud-btn btn-neon" title="Open Cyber CLI Terminal" data-sfx="click">
+          <i class="fa-solid fa-terminal"></i><span class="hud-btn-text"> CLI HUD</span>
         </button>
         <button id="mobile-menu-btn" class="hud-btn btn-icon mobile-only">
           <i class="fa-solid fa-bars"></i>
@@ -68,10 +79,6 @@
     <section id="hero" class="hero-section">
       <div class="container grid-hero">
         <div class="hero-content">
-          <div class="status-badge pulse-glow">
-            <span class="status-dot"></span>
-            <span class="status-text">STATUS: ONLINE // FULL STACK PYTHON DEVELOPER // KERALA, INDIA</span>
-          </div>
 
           <div class="hero-kicker">
             <span class="kicker-text">FROM LOGIC TO LAUNCH</span>
@@ -86,7 +93,10 @@
           </div>
 
           <p class="hero-bio">
-            Python Full Stack Developer specializing in high-performance backend architectures with <strong class="neon-cyan">Django & FastAPI</strong>, responsive frontend engineering with <strong class="neon-purple">React.js & Next.js</strong>, and AI sentiment platforms. Driven by scalable clean code, automated workflows, and high-impact digital solutions.
+            Python Full Stack Developer specializing in high-performance backend architectures with <strong
+              class="neon-cyan">Django & FastAPI</strong>, responsive frontend engineering with <strong
+              class="neon-purple">React.js & Next.js</strong>, and AI sentiment platforms. Driven by scalable clean
+            code, automated workflows, and high-impact digital solutions.
           </p>
 
 
@@ -114,9 +124,9 @@
             <div class="frame-corner top-right"></div>
             <div class="frame-corner bottom-left"></div>
             <div class="frame-corner bottom-right"></div>
-            
-            <img src="assets/avatar.png" alt="Jemshiya Jameel Futuristic Cyber Avatar" class="cyber-avatar-img">
-            
+
+            <img src="assets/user_photo.jpg" alt="Jemshiya Jameel" class="cyber-avatar-img">
+
             <div class="hologram-overlay"></div>
             <div class="avatar-tag">
               <i class="fa-solid fa-shield-halved"></i> STACK_VERIFIED
@@ -135,12 +145,31 @@
           <div class="title-bar"></div>
         </div>
 
+        <!-- About Bio Intro -->
+        <div class="about-bio glass-panel">
+          <div class="about-bio-text">
+            <h3 class="about-bio-name">Jemshiya Jameel <span class="neon-cyan" style="font-size: 14px; font-weight: 500;">— Python Full Stack Developer</span></h3>
+            <div class="about-bio-badges">
+              <span><i class="fa-solid fa-location-dot neon-cyan"></i> Kerala, India</span>
+              <span><i class="fa-solid fa-briefcase neon-purple"></i> MarketBytes, Infopark Cherthala</span>
+              <span><i class="fa-solid fa-graduation-cap neon-green"></i> BCA — Swamy Saswathikananda College</span>
+            </div>
+            <p class="about-bio-desc">
+              I'm a passionate Python Full Stack Developer with hands-on experience designing and building scalable, responsive web applications. Proficient in backend engineering with <strong class="neon-cyan">Python, Django, and FastAPI</strong>, frontend development with <strong class="neon-purple">React.js, Next.js, and JavaScript</strong>, and database management with <strong class="neon-green">MySQL and PostgreSQL</strong>. Dedicated to writing clean, maintainable code, architecting secure RESTful APIs, and delivering reliable, high-performance solutions.
+            </p>
+            <a href="#projects" class="btn btn-primary-cyber" style="margin-top: 8px; display: inline-flex; align-items: center; gap: 8px;" data-sfx="click">
+              <i class="fa-solid fa-rocket"></i> VIEW MY PROJECTS
+            </a>
+          </div>
+        </div>
+
         <div class="about-grid">
           <div class="about-card glass-panel" data-sfx="hover">
             <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
             <h3>Full Stack Engineering</h3>
             <p>
-              Hands-on experience constructing seamless web applications end-to-end. Proficient in integrating Python backends (Django/FastAPI) with modern JavaScript frontends (React.js/Next.js).
+              Hands-on experience constructing seamless web applications end-to-end. Proficient in integrating Python
+              backends (Django/FastAPI) with modern JavaScript frontends (React.js/Next.js).
             </p>
           </div>
 
@@ -148,7 +177,8 @@
             <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
             <h3>AI & Sentiment Systems</h3>
             <p>
-              Experienced in building AI-powered web solutions, integrating NLP sentiment analysis pipelines, patient/doctor portals, real-time communications, and intelligent dashboards.
+              Experienced in building AI-powered web solutions, integrating NLP sentiment analysis pipelines,
+              patient/doctor portals, real-time communications, and intelligent dashboards.
             </p>
           </div>
 
@@ -156,10 +186,12 @@
             <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
             <h3>LegalTech & Automation</h3>
             <p>
-              Designed law firm & case management architectures, developing precision financial engines (GST, Court fees, Invoicing) and role-based access security.
+              Designed law firm & case management architectures, developing precision financial engines (GST, Court
+              fees, Invoicing) and role-based access security.
             </p>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -290,7 +322,17 @@
             </div>
             <p class="skill-desc">Data Structures, Algorithms, Object-Oriented Programming, Problem Solving</p>
           </div>
+
+          <!-- Figma -->
+          <div class="skill-card glass-panel" data-category="tools" data-sfx="hover">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="fa-brands fa-figma"></i></span>
+              <span class="skill-name">Figma</span>
+            </div>
+            <p class="skill-desc">UI/UX Design, Wireframing, Prototyping & Collaborative Design Systems</p>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -310,17 +352,22 @@
               <div class="timeline-header">
                 <div>
                   <h3 class="role-title">Junior Python Full Stack Developer</h3>
-                  <h4 class="company-name neon-cyan"><i class="fa-solid fa-building"></i> MarketBytes, Infopark Cherthala</h4>
+                  <h4 class="company-name neon-cyan"><i class="fa-solid fa-building"></i> MarketBytes, Infopark
+                    Cherthala</h4>
                 </div>
-                <span class="timeline-badge"><i class="fa-regular fa-calendar-check"></i> May 2026 - Present</span>
+                <span class="timeline-badge"><i class="fa-regular fa-calendar-check"></i> March 2026 - Present</span>
               </div>
 
               <div class="timeline-body">
                 <ul>
-                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Working on full stack web application development using <strong>Python, Django, React.js, FastAPI, Next.js, and JavaScript</strong>.</li>
-                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Developing responsive frontend interfaces and high-speed backend REST APIs for web applications.</li>
-                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Collaborating with cross-functional team members using Git and GitHub for version control and agile project management.</li>
-                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Gaining hands-on production experience in REST API integration, SQL database management, schema design, and debugging.</li>
+                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Working on full stack web application
+                    development using <strong>Python, Django, React.js, FastAPI, Next.js, and JavaScript</strong>.</li>
+                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Developing responsive frontend interfaces and
+                    high-speed backend REST APIs for web applications.</li>
+                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Collaborating with cross-functional team
+                    members using Git and GitHub for version control and agile project management.</li>
+                  <li><i class="fa-solid fa-caret-right neon-purple"></i> Gaining hands-on production experience in REST
+                    API integration, SQL database management, schema design, and debugging.</li>
                 </ul>
 
                 <div class="tech-tags">
@@ -332,6 +379,7 @@
                   <span class="tech-tag">REST APIs</span>
                   <span class="tech-tag">MySQL</span>
                   <span class="tech-tag">Git</span>
+                  <span class="tech-tag">Figma</span>
                 </div>
               </div>
             </div>
@@ -358,25 +406,30 @@
             </div>
 
             <div class="project-content">
-              <h3 class="project-title">AI-Based Mental Health Sentiment Analyzer</h3>
+              <h3 class="project-title">AI Mental Health Assessment & Support Platform <span style="font-size:13px; color: var(--neon-cyan);">(Sentio)</span></h3>
               <p class="project-desc">
-                An AI-powered mental health platform leveraging NLP sentiment analysis to detect emotional states in real time, connecting users directly with licensed medical doctors. Features comprehensive Admin and Doctor analytics dashboards.
+                End-to-end AI mental health platform with role-based portals (Patient, Doctor, Admin) for psychological assessments, therapeutic support, and clinical monitoring.
               </p>
 
               <div class="project-features">
-                <span><i class="fa-solid fa-circle-check neon-cyan"></i> NLP Sentiment Classification</span>
-                <span><i class="fa-solid fa-circle-check neon-cyan"></i> Doctor Consultation & Real-time Chat</span>
-                <span><i class="fa-solid fa-circle-check neon-cyan"></i> Admin Analytics & Sentiment Reports</span>
+                <span><i class="fa-solid fa-circle-check neon-cyan"></i> NLP Chatbot (Keras/TF + NLTK) & Distress Screening</span>
+                <span><i class="fa-solid fa-circle-check neon-cyan"></i> Real-Time Sentiment & Emotion Polarity Pipeline</span>
+                <span><i class="fa-solid fa-circle-check neon-cyan"></i> Doctor–Patient Workflows & Clinical Analytics</span>
+                <span><i class="fa-solid fa-circle-check neon-cyan"></i> Automated Assessment Scoring & Secure RBAC APIs</span>
               </div>
 
               <div class="tech-tags">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Django</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
+                <span class="tech-tag">NLTK</span>
                 <span class="tech-tag">NLP</span>
-                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">REST APIs</span>
                 <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">RBAC</span>
+                <span class="tech-tag">Chart.js</span>
                 <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Bootstrap</span>
               </div>
 
               <div class="project-actions">
@@ -386,12 +439,13 @@
                 <button class="btn btn-sm btn-outline-cyber open-arch-btn" data-project="sentiment" data-sfx="click">
                   <i class="fa-solid fa-sitemap"></i> ARCHITECTURE
                 </button>
-                <a href="https://github.com/jemshiya-jameel4" target="_blank" class="btn btn-sm btn-ghost-cyber" data-sfx="click">
+                <a href="https://github.com/jemshiyajameel4-web/AI-Mental-Health" target="_blank" class="btn btn-sm btn-ghost-cyber" data-sfx="click">
                   <i class="fa-brands fa-github"></i> REPO
                 </a>
               </div>
             </div>
           </div>
+
 
           <!-- Project 2: LegalTech Platform -->
           <div class="project-card glass-panel" data-sfx="hover">
@@ -403,14 +457,19 @@
             <div class="project-content">
               <h3 class="project-title">LegalTech Platform – Law Firm & Case Management</h3>
               <p class="project-desc">
-                Full-stack enterprise law firm & case management platform. Features live Indian e-Courts API CNR tracking, PyPDF2/EasyOCR document digitization, real-time FastAPI WebSockets with voice note recording, 5-role RBAC, confidential document vault, and Dockerized deployment.
+                Full-stack enterprise law firm & case management platform. Features live Indian e-Courts API CNR
+                tracking, PyPDF2/EasyOCR document digitization, real-time FastAPI WebSockets with voice note recording,
+                5-role RBAC, confidential document vault, and Dockerized deployment.
               </p>
 
               <div class="project-features">
-                <span><i class="fa-solid fa-circle-check neon-purple"></i> Live e-Courts API CNR Sync & APScheduler</span>
-                <span><i class="fa-solid fa-circle-check neon-purple"></i> Intelligent OCR File Digitization (EasyOCR)</span>
+                <span><i class="fa-solid fa-circle-check neon-purple"></i> Live e-Courts API CNR Sync &
+                  APScheduler</span>
+                <span><i class="fa-solid fa-circle-check neon-purple"></i> Intelligent OCR File Digitization
+                  (EasyOCR)</span>
                 <span><i class="fa-solid fa-circle-check neon-purple"></i> Real-time WebSockets & Voice Messaging</span>
-                <span><i class="fa-solid fa-circle-check neon-purple"></i> 5-Role RBAC & Confidential Vault + 18% GST</span>
+                <span><i class="fa-solid fa-circle-check neon-purple"></i> 5-Role RBAC & Confidential Vault + 18%
+                  GST</span>
               </div>
 
               <div class="tech-tags">
@@ -432,7 +491,8 @@
                 <button class="btn btn-sm btn-outline-cyber open-arch-btn" data-project="legaltech" data-sfx="click">
                   <i class="fa-solid fa-sitemap"></i> ARCHITECTURE
                 </button>
-                <a href="https://github.com/jemshiya-jameel4" target="_blank" class="btn btn-sm btn-ghost-cyber" data-sfx="click">
+                <a href="https://github.com/jemshiyajameel4-web" target="_blank" class="btn btn-sm btn-ghost-cyber"
+                  data-sfx="click">
                   <i class="fa-brands fa-github"></i> REPO
                 </a>
               </div>
@@ -459,7 +519,8 @@
               <span class="edu-date"><i class="fa-regular fa-calendar"></i> 2023 - 2026</span>
               <h3>Bachelor Of Computer Application (BCA)</h3>
               <h4>Swamy Saswathikananda College</h4>
-              <p>Specialization in Data Structures, Software Engineering, Database Systems, Web Development, and Object-Oriented Programming.</p>
+              <p>Specialization in Data Structures, Software Engineering, Database Systems, Web Development, and
+                Object-Oriented Programming.</p>
             </div>
           </div>
 
@@ -470,7 +531,8 @@
               <span class="edu-date"><i class="fa-regular fa-calendar"></i> 2026</span>
               <h3>AI-Based Mental Health Sentiment Analyzer Certificate</h3>
               <h4>Gentrius Solutions</h4>
-              <p>Project Certificate verifying full-stack engineering, sentiment analysis NLP implementation, and dashboard architecture.</p>
+              <p>Project Certificate verifying full-stack engineering, sentiment analysis NLP implementation, and
+                dashboard architecture.</p>
             </div>
           </div>
         </div>
@@ -489,7 +551,7 @@
         <div class="contact-grid">
           <!-- Direct Details Cards -->
           <div class="contact-info">
-            <a href="mailto:jemshiyajameel4@gmail.com" class="info-card glass-panel" data-sfx="hover">
+            <a href="https://mail.google.com/mail/?view=cm&to=jemshiyajameel4@gmail.com" target="_blank" class="info-card glass-panel" data-sfx="hover">
               <div class="info-icon neon-cyan"><i class="fa-solid fa-envelope"></i></div>
               <div>
                 <span class="info-label">EMAIL TRANSMISSION</span>
@@ -505,7 +567,8 @@
               </div>
             </a>
 
-            <a href="https://www.linkedin.com/in/jemshiya-jameel4" target="_blank" class="info-card glass-panel" data-sfx="hover">
+            <a href="https://www.linkedin.com/in/jemshiya-jameel4" target="_blank" class="info-card glass-panel"
+              data-sfx="hover">
               <div class="info-icon neon-green"><i class="fa-brands fa-linkedin-in"></i></div>
               <div>
                 <span class="info-label">LINKEDIN PROFILE</span>
@@ -513,11 +576,12 @@
               </div>
             </a>
 
-            <a href="https://github.com/jemshiyajameel4" target="_blank" class="info-card glass-panel" data-sfx="hover">
+            <a href="https://github.com/jemshiyajameel4-web" target="_blank" class="info-card glass-panel"
+              data-sfx="hover">
               <div class="info-icon neon-pink"><i class="fa-brands fa-github"></i></div>
               <div>
                 <span class="info-label">GITHUB REPOSITORIES</span>
-                <span class="info-value">github.com/jemshiyajameel4</span>
+                <span class="info-value">github.com/jemshiyajameel4-web</span>
               </div>
             </a>
 
@@ -548,7 +612,7 @@
         <a href="#hero">TOP</a>
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
-        <a href="https://github.com/jemshiyajameel4" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/jemshiyajameel4-web" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/jemshiya-jameel4" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
@@ -570,7 +634,8 @@
         <div class="cli-welcome">
           ====================================================================<br>
           JEMSHIYA JAMEEL // CYBER TERMINAL INTERFACE v2.6<br>
-          Type <span class="neon-cyan">'help'</span> for list of commands or try <span class="neon-purple">'sudo hire'</span><br>
+          Type <span class="neon-cyan">'help'</span> for list of commands or try <span class="neon-purple">'sudo
+            hire'</span><br>
           ====================================================================<br><br>
         </div>
         <div id="cli-output"></div>
@@ -591,14 +656,17 @@
       </div>
       <div class="modal-body">
         <p class="modal-intro">
-          Test the NLP sentiment logic engine from Jemshiya's AI Mental Health Platform. Enter any patient statement below:
+          Test the NLP sentiment logic engine from Jemshiya's AI Mental Health Platform. Enter any patient statement
+          below:
         </p>
 
         <div class="sim-box">
           <label for="sentiment-input">PATIENT INPUT STATEMENT:</label>
-          <textarea id="sentiment-input" class="cyber-textarea" rows="3" placeholder="e.g., I've been feeling extremely overwhelmed with work lately and struggling to sleep."></textarea>
-          
-          <button id="analyze-sentiment-btn" class="btn btn-primary-cyber btn-block" style="margin-top: 15px;" data-sfx="click">
+          <textarea id="sentiment-input" class="cyber-textarea" rows="3"
+            placeholder="e.g., I've been feeling extremely overwhelmed with work lately and struggling to sleep."></textarea>
+
+          <button id="analyze-sentiment-btn" class="btn btn-primary-cyber btn-block" style="margin-top: 15px;"
+            data-sfx="click">
             <i class="fa-solid fa-wand-magic-sparkles"></i> RUN NLP SENTIMENT ANALYSIS
           </button>
         </div>
@@ -653,7 +721,8 @@
             </select>
           </div>
 
-          <button id="calc-legal-btn" class="btn btn-primary-cyber btn-block" style="margin-top: 15px;" data-sfx="click">
+          <button id="calc-legal-btn" class="btn btn-primary-cyber btn-block" style="margin-top: 15px;"
+            data-sfx="click">
             <i class="fa-solid fa-calculator"></i> GENERATE INVOICE & GST BREAKDOWN
           </button>
         </div>
@@ -663,10 +732,13 @@
           <div class="invoice-table">
             <div class="inv-row"><span>Base Fee:</span><strong id="inv-base">₹0</strong></div>
             <div class="inv-row"><span>GST @ 18%:</span><strong id="inv-gst" class="neon-pink">₹0</strong></div>
-            <div class="inv-row"><span>Court Statutory Fee:</span><strong id="inv-court" class="neon-cyan">₹0</strong></div>
-            <div class="inv-row inv-total"><span>TOTAL CLIENT PAYABLE:</span><strong id="inv-total" class="neon-green">₹0</strong></div>
+            <div class="inv-row"><span>Court Statutory Fee:</span><strong id="inv-court" class="neon-cyan">₹0</strong>
+            </div>
+            <div class="inv-row inv-total"><span>TOTAL CLIENT PAYABLE:</span><strong id="inv-total"
+                class="neon-green">₹0</strong></div>
           </div>
-          <p class="inv-note"><i class="fa-solid fa-shield-check"></i> Verified by FastAPI Financial Engine (100% Accuracy Standard)</p>
+          <p class="inv-note"><i class="fa-solid fa-shield-check"></i> Verified by FastAPI Financial Engine (100%
+            Accuracy Standard)</p>
         </div>
       </div>
     </div>
@@ -706,7 +778,12 @@
     </div>
   </div>
 
+  <!-- GSAP & ScrollTrigger Core Animation Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
   <!-- Main JavaScript File -->
   <script src="app.js"></script>
 </body>
+
 </html>

@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const particles = [];
     const numParticles = Math.min(Math.floor(width / 18), 70);
 
+    const particleColors = ['#00f5ff', '#a855f7', '#ff2a85', '#00ffa3'];
     for (let i = 0; i < numParticles; i++) {
       particles.push({
         x: Math.random() * width,
@@ -144,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         vx: (Math.random() - 0.5) * 0.6,
         vy: (Math.random() - 0.5) * 0.6,
         radius: Math.random() * 2 + 1,
-        color: Math.random() > 0.5 ? '#00f0ff' : '#9d00ff'
+        color: particleColors[Math.floor(Math.random() * particleColors.length)]
       });
     }
 
@@ -162,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(0, 240, 255, ${0.15 * (1 - dist / 130)})`;
+            ctx.strokeStyle = `rgba(0, 245, 255, ${0.16 * (1 - dist / 130)})`;
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }
@@ -180,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
-        ctx.shadowBlur = 8;
+        ctx.shadowBlur = 10;
         ctx.shadowColor = p.color;
         ctx.fill();
         ctx.shadowBlur = 0;
@@ -328,7 +329,7 @@ Summary: Skilled in building responsive web UIs, high-speed REST APIs (Django & 
   Email    : jemshiyajameel4@gmail.com
   Phone    : +91 8075507112
   LinkedIn : www.linkedin.com/in/jemshiya-jameel4
-  GitHub   : github.com/jemshiyajameel4`,
+  GitHub   : github.com/jemshiyajameel4-web`,
 
     'sudo hire': `[PROTOCOL ACTIVATED]: Candidate Jemshiya Jameel is READY for Full Stack Developer opportunities!
 Initiating Direct Contact Modal...`
@@ -557,4 +558,249 @@ Initiating Direct Contact Modal...`
       }, 1600);
     });
   }
+
+  // 13. RESPONSIVE MOBILE NAVIGATION DRAWER
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const hudNav = document.getElementById('hud-nav');
+
+  if (mobileMenuBtn && hudNav) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      hudNav.classList.toggle('active');
+      const isOpen = hudNav.classList.contains('active');
+      mobileMenuBtn.innerHTML = isOpen 
+        ? '<i class="fa-solid fa-xmark"></i>' 
+        : '<i class="fa-solid fa-bars"></i>';
+      if (typeof playCyberSound === 'function') {
+        playCyberSound('click');
+      }
+    });
+
+    // Close menu when clicking any nav link
+    hudNav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hudNav.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (hudNav.classList.contains('active') && !hudNav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        hudNav.classList.remove('active');
+        mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      }
+    });
+  }
+
+  // 14. GSAP & SCROLLTRIGGER ADVANCED ANIMATION ENGINE
+  if (typeof gsap !== 'undefined') {
+    if (typeof ScrollTrigger !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+    }
+
+    // A. HERO SECTION ENTRANCE TIMELINE
+    const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+    heroTl.from('.hud-header', {
+      y: -60,
+      opacity: 0,
+      duration: 0.9
+    });
+
+    heroTl.from(
+      '.hero-kicker, .hero-title, .hero-subtitle-container, .hero-bio, .hero-cta-group, .hero-metrics',
+      {
+        y: 35,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.8
+      },
+      '-=0.4'
+    );
+
+    heroTl.from(
+      '.cyber-avatar-frame',
+      {
+        scale: 0.88,
+        opacity: 0,
+        duration: 1.1,
+        ease: 'back.out(1.4)'
+      },
+      '-=0.7'
+    );
+
+    // B. SCROLLTRIGGER SECTION REVEALS
+    if (typeof ScrollTrigger !== 'undefined') {
+      // Section headers
+      document.querySelectorAll('.section-header').forEach(header => {
+        gsap.from(header, {
+          scrollTrigger: {
+            trigger: header,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 30,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out'
+        });
+      });
+
+      // About Bio intro
+      const aboutBio = document.querySelector('.about-bio');
+      if (aboutBio) {
+        gsap.from(aboutBio, {
+          scrollTrigger: {
+            trigger: aboutBio,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 30,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out'
+        });
+      }
+
+      // About Cards
+      if (document.querySelector('.about-grid')) {
+        gsap.from('.about-grid .about-card', {
+          scrollTrigger: {
+            trigger: '.about-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 35,
+          opacity: 0,
+          stagger: 0.12,
+          duration: 0.7,
+          ease: 'power2.out'
+        });
+      }
+
+      // Skills Grid Cards
+      if (document.querySelector('.skills-grid')) {
+        gsap.from('.skills-grid .skill-card', {
+          scrollTrigger: {
+            trigger: '.skills-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          scale: 0.92,
+          opacity: 0,
+          stagger: 0.04,
+          duration: 0.6,
+          ease: 'power2.out'
+        });
+      }
+
+      // Timeline Item
+      document.querySelectorAll('.timeline-item').forEach(item => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          x: -30,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out'
+        });
+      });
+
+      // Project Cards
+      if (document.querySelector('.projects-grid')) {
+        gsap.from('.projects-grid .project-card', {
+          scrollTrigger: {
+            trigger: '.projects-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 40,
+          opacity: 0,
+          stagger: 0.18,
+          duration: 0.85,
+          ease: 'power3.out'
+        });
+      }
+
+      // Education Cards
+      if (document.querySelector('.edu-grid')) {
+        gsap.from('.edu-grid .edu-card', {
+          scrollTrigger: {
+            trigger: '.edu-grid',
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 30,
+          opacity: 0,
+          stagger: 0.12,
+          duration: 0.7,
+          ease: 'power2.out'
+        });
+      }
+
+      // Contact Grid
+      const contactGrid = document.querySelector('.contact-grid');
+      if (contactGrid) {
+        gsap.from(contactGrid, {
+          scrollTrigger: {
+            trigger: contactGrid,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          },
+          y: 30,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power2.out'
+        });
+      }
+    }
+
+    // C. 3D INTERACTIVE CARD TILT ON MOUSEMOVE
+    const tiltCards = document.querySelectorAll('.project-card, .about-card, .edu-card, .metric-card');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        gsap.to(card, {
+          rotationY: x * 0.035,
+          rotationX: -y * 0.035,
+          transformPerspective: 1000,
+          duration: 0.35,
+          ease: 'power1.out'
+        });
+      });
+
+      card.addEventListener('mouseleave', () => {
+        gsap.to(card, {
+          rotationY: 0,
+          rotationX: 0,
+          duration: 0.55,
+          ease: 'elastic.out(1, 0.4)'
+        });
+      });
+    });
+
+    // D. DYNAMIC GLITCH INTERACTION ON HERO TITLE
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+      heroTitle.addEventListener('click', () => {
+        if (typeof playCyberSound === 'function') {
+          playCyberSound('terminal');
+        }
+        gsap.fromTo(
+          heroTitle,
+          { x: -5, skewX: 5 },
+          { x: 0, skewX: 0, duration: 0.3, ease: 'rough' }
+        );
+      });
+    }
+  }
 });
+
+
