@@ -298,25 +298,27 @@ Location: Kerala, India
 Summary: Skilled in building responsive web UIs, high-speed REST APIs (Django & FastAPI), SQL database schemas, and AI-powered sentiment analysis platforms.`,
 
     skills: `TECHNICAL MATRIX:
-  [Backend]  : Python, Django, REST APIs, FastAPI, SQLAlchemy
-  [Frontend] : React.js, Next.js, JS ES6+, HTML5, CSS3, Tailwind CSS, Bootstrap
-  [Databases]: MySQL
-  [Dev Tools]: Git, GitHub, GitHub Copilot, Linux, Data Structures, OOP`,
+  [Languages]: Python
+  [Frontend] : HTML5, CSS3, JavaScript (ES6+), React.js, Bootstrap, Next.js, Tailwind CSS
+  [Backend]  : Django, FastAPI, REST APIs, WebSockets
+  [Databases]: MySQL, SQLAlchemy
+  [Dev Tools]: Git, GitHub, Docker, Version Control, GitHub Copilot, Linux
+  [CS Core]  : Data Structures, Algorithms, OOP, Problem Solving`,
 
     projects: `FEATURED PROJECTS:
   1. AI-Based Mental Health Sentiment Analyzer
-     Tech: Python, Django, NLP, Chart.js, MySQL
-     Desc: AI sentiment classification, doctor portal, real-time consultation chat.
+     Tech: Python, Django, HTML, CSS, Bootstrap, JavaScript, MySQL, NLP, Chart.js
+     Desc: AI sentiment classification, doctor portal, sentiment analytics, and real-time chat.
   
-  2. LegalTech Platform – Law Firm & Case Management
-     Tech: Python, FastAPI, Next.js, SQLAlchemy, MySQL, Tailwind
-     Desc: High efficiency gain, GST/Court Fee finance engine, role-based dashboards.`,
+  2. LegalTech Platform – Law Firm & Case Management System
+     Tech: Python, FastAPI, Next.js, MySQL, SQLAlchemy, Docker, WebSockets, OCR, APScheduler
+     Desc: Live Indian e-Courts API CNR tracking, Intelligent OCR, real-time WebSockets messaging, 5-role RBAC.`,
 
     exp: `WORK LOG:
   Role: Junior Python Full Stack Developer
   Company: MarketBytes, Infopark Cherthala
-  Period: May 2026 - Present
-  Tasks: Django/FastAPI REST APIs, React/Next.js UI components, Git collaboration, SQL optimization.`,
+  Period: March 2026 - Present
+  Tasks: Full stack web app development (Python, Django, React.js, FastAPI, Next.js, JavaScript), REST APIs, database management systems, Git/GitHub agile workflow.`,
 
     education: `ACADEMIC & CREDENTIALS:
   - Bachelor of Computer Application (BCA) | 2023 - 2026
