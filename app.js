@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const particles = [];
     const numParticles = Math.min(Math.floor(width / 18), 70);
 
-    const particleColors = ['#00f5ff', '#a855f7', '#ff2a85', '#00ffa3'];
+    const particleColors = ['#bd00ff', '#ff9a00', '#01ff1f', '#e3ff00'];
     for (let i = 0; i < numParticles; i++) {
       particles.push({
         x: Math.random() * width,
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(0, 245, 255, ${0.16 * (1 - dist / 130)})`;
+            ctx.strokeStyle = `rgba(255, 154, 0, ${0.18 * (1 - dist / 130)})`;
             ctx.lineWidth = 0.6;
             ctx.stroke();
           }
@@ -306,13 +306,22 @@ Summary: Skilled in building responsive web UIs, high-speed REST APIs (Django & 
   [CS Core]  : Data Structures, Algorithms, OOP, Problem Solving`,
 
     projects: `FEATURED PROJECTS:
-  1. AI-Based Mental Health Sentiment Analyzer
-     Tech: Python, Django, HTML, CSS, Bootstrap, JavaScript, MySQL, NLP, Chart.js
+  1. AI-Based Mental Health Sentiment Analyzer (Sentio)
+     Tech: Python, Django, TensorFlow, Keras, NLTK, MySQL, NLP, Chart.js
      Desc: AI sentiment classification, doctor portal, sentiment analytics, and real-time chat.
   
-  2. LegalTech Platform – Law Firm & Case Management System
+  2. LegalTech Platform – Law Firm & Case Management System (Collaborative)
      Tech: Python, FastAPI, Next.js, MySQL, SQLAlchemy, Docker, WebSockets, OCR, APScheduler
-     Desc: Live Indian e-Courts API CNR tracking, Intelligent OCR, real-time WebSockets messaging, 5-role RBAC.`,
+     Desc: Live Indian e-Courts API CNR tracking, Intelligent OCR, real-time WebSockets messaging, 5-role RBAC.
+
+  3. Nexora Creative Studio – Luxury Branding & Signage Platform (Live Commercial)
+     Tech: HTML5, CSS3, JavaScript (ES6+), GSAP, ScrollTrigger, UI/UX, Vercel
+     Live: https://nexora-eight-roan.vercel.app/
+     Desc: Commercial luxury agency website with GSAP scroll animations, responsive design, and branding showcase.
+
+  4. Online Fabric – Collaborative Textile & Commerce Platform (Collaborative)
+     Tech: Python, JavaScript, REST APIs, MySQL, HTML5, CSS3, Git Teamwork
+     Desc: Collaborative textile catalog, material customization, interactive palette picker, and order processing.`,
 
     exp: `WORK LOG:
   Role: Junior Python Full Stack Developer
@@ -516,6 +525,42 @@ Initiating Direct Contact Modal...`
 
           <h4 style="color:var(--neon-pink); margin-top:16px; margin-bottom:10px;">[LAYER 4: DATABASE & ORM]</h4>
           <p>SQLAlchemy ORM, MySQL Relational Database, Case File Storage Indexing</p>
+        </div>
+      `
+    },
+    nexora: {
+      title: 'Nexora Creative Studio System Architecture',
+      html: `
+        <div style="font-family: var(--font-mono); font-size: 13px; line-height: 1.8;">
+          <h4 style="color:var(--neon-pink); margin-bottom:10px;">[LAYER 1: CLIENT PRESENTATION UI]</h4>
+          <p>HTML5, Modern CSS3 Custom Properties, Responsive Fluid Grid, Luxury Dark Aesthetic & Typographic Hierarchy</p>
+
+          <h4 style="color:var(--neon-cyan); margin-top:16px; margin-bottom:10px;">[LAYER 2: INTERACTIVE MOTION ENGINE]</h4>
+          <p>GSAP 3.12 (GreenSock), ScrollTrigger Timelines, Staggered Entrance FX, Custom Cursor & Micro-interactions</p>
+
+          <h4 style="color:var(--neon-green); margin-top:16px; margin-bottom:10px;">[LAYER 3: SEO & METADATA PIPELINE]</h4>
+          <p>JSON-LD Structured Data Schema, Open Graph Protocol, High-Performance Asset Optimization</p>
+
+          <h4 style="color:var(--neon-purple); margin-top:16px; margin-bottom:10px;">[LAYER 4: EDGE CLOUD DEPLOYMENT]</h4>
+          <p>Vercel Global CDN Edge Network, Automated Git Deployments, Zero-Config SSL & Continuous Delivery</p>
+        </div>
+      `
+    },
+    fabric: {
+      title: 'Online Fabric Collaborative Platform Architecture',
+      html: `
+        <div style="font-family: var(--font-mono); font-size: 13px; line-height: 1.8;">
+          <h4 style="color:var(--neon-green); margin-bottom:10px;">[LAYER 1: INTERACTIVE CATALOG & UI]</h4>
+          <p>HTML5, Modern CSS3, JavaScript ES6+, Dynamic Pattern & Color Palette Swatch Selector</p>
+
+          <h4 style="color:var(--neon-cyan); margin-top:16px; margin-bottom:10px;">[LAYER 2: COLLABORATIVE TEAM CODEBASE]</h4>
+          <p>Pair-Engineered Modular Architecture, Feature Branch Git Workflow, Clean Code Separation</p>
+
+          <h4 style="color:var(--neon-purple); margin-top:16px; margin-bottom:10px;">[LAYER 3: REST APIS & CART PIPELINE]</h4>
+          <p>Python/Full Stack Backend Services, Fabric Calculation Formulas, Real-time Order Cart Processing</p>
+
+          <h4 style="color:var(--neon-pink); margin-top:16px; margin-bottom:10px;">[LAYER 4: DATA MODEL & STORAGE]</h4>
+          <p>MySQL Relational Schema, Textile Attributes (GSM, Fabric Type, Texture, Pricing, Stock Availability)</p>
         </div>
       `
     }
